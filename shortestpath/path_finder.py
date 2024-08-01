@@ -30,7 +30,8 @@ def find_paths(graph):
 def bfs(graph, node, visited, paths):
     """Search for the shortest path to all nodes within the graph by exploring all the connected nodes
     in a level-by-level manner. It starts at a root node and visits all the adjacent nodes. 
-    Then for each of those adjacent nodes, it explores their unexplored neighbour nodes and so on."""
+    Then for each of those adjacent nodes, it explores their unexplored neighbour nodes and so on.
+    """
     queue = Queue()
     queue.put(node)
     visited.add(node)
