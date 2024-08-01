@@ -1,0 +1,46 @@
+[tool.poetry]
+name = "shortestpath"
+version = "0.2.0"
+description = "Visualization of Shortest Path Visiting All Nodes in a Graph"
+authors = ["Chris Chang Seong"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+networkx = "*"
+# matplotlib = "*"
+# matplotlib.pyplot = "*"
+# matplotlib.animation = "*"
+# string = "*"
+matplotlib = "^3.9.1"
+
+
+
+[tool.poetry.dev-dependencies]
+[tool.semantic_release]
+version_variable = "pyproject.toml:version" # version location
+branch = "main"                             # branch to make releases of
+changelog_file = "CHANGELOG.md"             # changelog file
+build_command = "poetry build"              # build dists
+dist_path = "dist/"                         # where to put dists
+upload_to_release = true                    # auto-create GitHub release
+upload_to_pypi = false                      # don't auto-upload to PyPI
+remove_dist = false                         # don't remove dists
+patch_without_tag = true                    # patch release by default
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.4"
+pytest = "^7.4"
+pytest-mock = "*"
+pytest-sugar = "*"
+pytest-cov = "*"
+black = "*"
+mypy = "*"
+ruff = "*"
+isort = "*"
+tox = "^4.11.4"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
