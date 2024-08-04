@@ -22,6 +22,7 @@ Here is the list of the color codes for visualization:
 - Shortest path color: Red
 
 This animation may help users understand how BFS finds the shortest path to all nodes in an unweighted undirected graph.
+
 Please feel to use it and enjoy it! Any contribution will be welcome. Please check out the contributing guidelines if you wish to make.
 
 ## Installation
