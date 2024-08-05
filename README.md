@@ -25,6 +25,10 @@ This animation may help users understand how BFS finds the shortest path to all 
 
 Please feel to use it and enjoy it! Any contribution will be welcome. Please check out the contributing guidelines if you wish to make.
 
+### Screenshots of Shortest Path Animation
+
+![bfs](screenshot/g1.png "bfs")
+
 ## Installation
 
 ```bash
